@@ -77,3 +77,23 @@ async storage is used to save data locally. in android it uses shared preference
             });
 
 
+for using async storage  import this 
+
+            import {AsyncStorage} from 'react-native';
+
+saving 
+            AsyncStorage.setItem('user',"Vishnugupta chanakya irshad");
+
+retriving
+
+            try{
+            let user = await AsyncStorage.getItem('user');
+            let parsed  = JSON.parse(user);
+            alert(parsed.name)
+            this.setState({
+            names: parsed.name
+
+            }) 
+            }catch(error){
+            alert(error)
+            }
