@@ -82,6 +82,7 @@ for using async storage  import this
             import {AsyncStorage} from 'react-native';
 
 saving 
+            
             AsyncStorage.setItem('user',"Vishnugupta chanakya irshad");
 
 retriving
